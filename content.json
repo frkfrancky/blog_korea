@@ -1,0 +1,180 @@
+{
+  "hero": {
+    "title": "Mon Carnet d'Évasion",
+    "subtitle": "Découvrez mes aventures à travers le monde, en photos et en vidéos."
+  },
+  "journal": {
+    "title": "Le Récit du Voyage",
+    "stages": [
+      {
+        "title": "Le Départ",
+        "desc": "Les sacs sont faits. L'excitation monte. C'est le début d'une nouvelle aventure.",
+        "img": "[Image de Préparatifs de voyage]",
+        "color": "linear-gradient(45deg, #2a2a35, #1a1a24)"
+      },
+      {
+        "title": "La Jungle",
+        "desc": "Humidité à 90%. Les bruits de la nature sont assourdissants et magnifiques.",
+        "img": "[Image de Trek en pleine jungle]",
+        "color": "linear-gradient(45deg, #134E5E, #71B280)"
+      },
+      {
+        "title": "Les Sommets",
+        "desc": "L'air se fait rare, mais la vue sur les nuages en contrebas en vaut la peine.",
+        "img": "[Image de Montagnes enneigées]",
+        "color": "linear-gradient(45deg, #2980B9, #6DD5FA)"
+      },
+      {
+        "title": "Le Retour",
+        "desc": "Dernier coucher de soleil avant de reprendre l'avion. La tête pleine de souvenirs.",
+        "img": "[Image de Avion au coucher du soleil]",
+        "color": "linear-gradient(45deg, #FF4B2B, #FF416C)"
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Instants Capturés",
+    "items": [
+      {
+        "id": "bento-1",
+        "class": "bento-1",
+        "text": "[Image de Paysage de jungle luxuriante]",
+        "gradient": "linear-gradient(45deg, #1f4037, #99f2c8)"
+      },
+      {
+        "id": "bento-2",
+        "class": "bento-2",
+        "text": "[Image de Coucher de soleil sur la plage]",
+        "gradient": "linear-gradient(45deg, #f12711, #f5af19)"
+      },
+      {
+        "id": "bento-3",
+        "class": "bento-3",
+        "text": "[Image de Portrait d'un habitant local]",
+        "gradient": "linear-gradient(45deg, #654ea3, #eaafc8)"
+      },
+      {
+        "id": "bento-4",
+        "class": "bento-4",
+        "text": "[Image de Ciel étoilé]",
+        "gradient": "linear-gradient(45deg, #000428, #004e92)"
+      },
+      {
+        "id": "bento-5",
+        "class": "bento-5",
+        "text": "[Image de Vue panoramique d'une ville historique]",
+        "gradient": "linear-gradient(45deg, #3a1c71, #d76d77, #ffaf7b)"
+      }
+    ]
+  },
+  "horizontal": {
+    "cards": [
+      {
+        "title": "Exploration Sous-Marine",
+        "desc": "Une rencontre inoubliable au fond de l'océan.",
+        "video": "[Vidéo de Plongée sous-marine avec des tortues]",
+        "bgColor": "#222"
+      },
+      {
+        "title": "L'ascension du Volcan",
+        "desc": "Un réveil à 3h du matin récompensé par ce panorama.",
+        "video": "[Vidéo de Randonnée sur un volcan]",
+        "bgColor": "#1a2a3a"
+      },
+      {
+        "title": "Ambiance Nocturne",
+        "desc": "Les couleurs et les odeurs du marché traditionnel.",
+        "video": "[Vidéo de Marché local nocturne]",
+        "bgColor": "#3a1a1a"
+      }
+    ]
+  },
+  "accordion": {
+    "title": "Beautés Cachées",
+    "items": [
+      {
+        "title": "Cascade Secrète",
+        "desc": "Découverte après 2h de marche dans la forêt vierge.",
+        "gradient": "linear-gradient(135deg, #11998e, #38ef7d)"
+      },
+      {
+        "title": "Architecture Locale",
+        "desc": "Les ruelles colorées de la vieille ville.",
+        "gradient": "linear-gradient(135deg, #FC466B, #3F5EFB)"
+      },
+      {
+        "title": "Rencontre Sauvage",
+        "desc": "Un moment suspendu avec la faune locale.",
+        "gradient": "linear-gradient(135deg, #ff9966, #ff5e62)"
+      },
+      {
+        "title": "Plongée Sous-Marine",
+        "desc": "Les récifs coralliens dans toute leur splendeur.",
+        "gradient": "linear-gradient(135deg, #00B4DB, #0083B0)"
+      }
+    ]
+  },
+  "parallax": {
+    "title": "L'immensité du Désert",
+    "text": "Rien de tel que le silence absolu des dunes de sable à perte de vue pour se recentrer. Une expérience qui remet notre place dans le monde en perspective."
+  },
+  "polaroids": {
+    "title": "Souvenirs en Vrac",
+    "photos": [
+      {
+        "id": "p1",
+        "caption": "Jour 1 : L'arrivée",
+        "bgColor": "#4facfe"
+      },
+      {
+        "id": "p2",
+        "caption": "Le meilleur repas !",
+        "bgColor": "#f093fb"
+      },
+      {
+        "id": "p3",
+        "caption": "Vue depuis l'hôtel",
+        "bgColor": "#43e97b"
+      },
+      {
+        "id": "p4",
+        "caption": "Rencontre imprévue",
+        "bgColor": "#fa709a"
+      },
+      {
+        "id": "p5",
+        "caption": "Marché aux épices",
+        "bgColor": "#a18cd1"
+      },
+      {
+        "id": "p6",
+        "caption": "Artisanat local",
+        "bgColor": "#f6d365"
+      },
+      {
+        "id": "p7",
+        "caption": "Perdus dans les rues",
+        "bgColor": "#ff0844"
+      },
+      {
+        "id": "p8",
+        "caption": "Notre guide génial",
+        "bgColor": "#20E2D7"
+      },
+      {
+        "id": "p9",
+        "caption": "Un café en terrasse",
+        "bgColor": "#B6CEE8"
+      },
+      {
+        "id": "p10",
+        "caption": "Avant le départ...",
+        "bgColor": "#F77062"
+      }
+    ]
+  },
+  "footer": {
+    "title": "Prêt pour la prochaine destination ?",
+    "copyright": "© 2024 - Mon Carnet de Voyage"
+  }
+}
