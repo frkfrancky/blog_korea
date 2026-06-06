@@ -1,180 +1,202 @@
 {
   "hero": {
-    "title": "Mon Carnet d'Évasion",
-    "subtitle": "Découvrez mes aventures à travers le monde, en photos et en vidéos."
+    "title": "My Journey to South Korea",
+    "subtitle": "Discovering Busan, Seoul, Korean Cuisine, and an Unforgettable Study Exchange"
   },
   "journal": {
-    "title": "Le Récit du Voyage",
+    "title": "The Journey Unfolds",
     "stages": [
       {
-        "title": "Le Départ",
-        "desc": "Les sacs sont faits. L'excitation monte. C'est le début d'une nouvelle aventure.",
-        "img": "[Image de Préparatifs de voyage]",
-        "color": "linear-gradient(45deg, #2a2a35, #1a1a24)"
+        "title": "Busan: The Coastal Gem",
+        "desc": "Our first destination welcomed us with bustling beaches, colorful markets, and stunning coastal views. Busan's vibrant energy and blend of tradition and modernity captured our hearts from day one.",
+        "img": "assets/image/20260425_153833.jpg",
+        "color": "linear-gradient(45deg, #FF6B6B, #FF8E53)"
       },
       {
-        "title": "La Jungle",
-        "desc": "Humidité à 90%. Les bruits de la nature sont assourdissants et magnifiques.",
-        "img": "[Image de Trek en pleine jungle]",
-        "color": "linear-gradient(45deg, #134E5E, #71B280)"
+        "title": "Korean Cuisine: A Culinary Adventure",
+        "desc": "From street food to fine dining, every meal was an exploration. Kimchi, bibimbap, and tteokbokki became more than just food—they were gateways to understanding Korean culture.",
+        "img": "assets/image/20260501_180431.jpg",
+        "color": "linear-gradient(45deg, #F5A962, #D66A6A)"
       },
       {
-        "title": "Les Sommets",
-        "desc": "L'air se fait rare, mais la vue sur les nuages en contrebas en vaut la peine.",
-        "img": "[Image de Montagnes enneigées]",
-        "color": "linear-gradient(45deg, #2980B9, #6DD5FA)"
+        "title": "The Study Project & BISF Festival",
+        "desc": "Our exchange program brought us together with local students. The BISF Festival was the highlight—showcasing innovation, creativity, and international collaboration in ways we never expected.",
+        "img": "assets/image/20260501_180512.jpg",
+        "color": "linear-gradient(45deg, #667eea, #764ba2)"
       },
       {
-        "title": "Le Retour",
-        "desc": "Dernier coucher de soleil avant de reprendre l'avion. La tête pleine de souvenirs.",
-        "img": "[Image de Avion au coucher du soleil]",
-        "color": "linear-gradient(45deg, #FF4B2B, #FF416C)"
+        "title": "Seoul: The Dynamic Capital",
+        "desc": "K-pop districts, ancient temples, modern skyscrapers—Seoul embodied contradictions beautifully. Every neighborhood told a different story of Korea's past and future.",
+        "img": "assets/image/20260505_093924.jpg",
+        "color": "linear-gradient(45deg, #f093fb, #f5576c)"
       }
     ]
   },
   "gallery": {
-    "title": "Instants Capturés",
+    "title": "Captured Moments",
     "items": [
       {
         "id": "bento-1",
         "class": "bento-1",
-        "text": "[Image de Paysage de jungle luxuriante]",
-        "gradient": "linear-gradient(45deg, #1f4037, #99f2c8)"
+        "img": "assets/image/20260426_171719.jpg",
+        "text": "Busan's Gamcheon Culture Village",
+        "gradient": "linear-gradient(45deg, #FF6B9D, #C44569)"
       },
       {
         "id": "bento-2",
         "class": "bento-2",
-        "text": "[Image de Coucher de soleil sur la plage]",
+        "img": "assets/image/20260425_200408.jpg",
+        "text": "Street food stalls & Korean delicacies",
         "gradient": "linear-gradient(45deg, #f12711, #f5af19)"
       },
       {
         "id": "bento-3",
         "class": "bento-3",
-        "text": "[Image de Portrait d'un habitant local]",
-        "gradient": "linear-gradient(45deg, #654ea3, #eaafc8)"
+        "img": "assets/image/20260501_172528.jpg",
+        "text": "BISF Festival moments",
+        "gradient": "linear-gradient(45deg, #667eea, #764ba2)"
       },
       {
         "id": "bento-4",
         "class": "bento-4",
-        "text": "[Image de Ciel étoilé]",
-        "gradient": "linear-gradient(45deg, #000428, #004e92)"
+        "img": "assets/image/20260505_093924.jpg",
+        "text": "Seoul's vibrant nights",
+        "gradient": "linear-gradient(45deg, #fa709a, #fee140)"
       },
       {
         "id": "bento-5",
         "class": "bento-5",
-        "text": "[Image de Vue panoramique d'une ville historique]",
-        "gradient": "linear-gradient(45deg, #3a1c71, #d76d77, #ffaf7b)"
+        "img": "assets/image/20260505_095027.jpg",
+        "text": "International friendships & connections",
+        "gradient": "linear-gradient(45deg, #30cfd0, #330867)"
       }
     ]
   },
   "horizontal": {
     "cards": [
       {
-        "title": "Exploration Sous-Marine",
-        "desc": "Une rencontre inoubliable au fond de l'océan.",
-        "video": "[Vidéo de Plongée sous-marine avec des tortues]",
-        "bgColor": "#222"
+        "title": "Busan's Maritime Magic",
+        "desc": "A walk along Haeundae Beach at golden hour, with waves crashing and the city lights beginning to twinkle.",
+        "img": "assets/image/20260426_182117.jpg",
+        "video": "Haeundae Beach sunset walkthrough",
+        "bgColor": "#1a3a52"
       },
       {
-        "title": "L'ascension du Volcan",
-        "desc": "Un réveil à 3h du matin récompensé par ce panorama.",
-        "video": "[Vidéo de Randonnée sur un volcan]",
-        "bgColor": "#1a2a3a"
+        "title": "A Taste of Korea",
+        "desc": "From making bibimbap to sampling street food at night markets. Every bite tells a story.",
+        "img": "assets/image/20260501_171304.jpg",
+        "video": "Korean cooking experience & market exploration",
+        "bgColor": "#4a2c2a"
       },
       {
-        "title": "Ambiance Nocturne",
-        "desc": "Les couleurs et les odeurs du marché traditionnel.",
-        "video": "[Vidéo de Marché local nocturne]",
-        "bgColor": "#3a1a1a"
+        "title": "Seoul After Dark",
+        "desc": "Neon lights, bustling streets, and unforgettable nights exploring Gangnam, Itaewon, and beyond.",
+        "img": "assets/image/20260505_095028.jpg",
+        "video": "Seoul nightlife and cultural districts",
+        "bgColor": "#1a1a3a"
       }
     ]
   },
   "accordion": {
-    "title": "Beautés Cachées",
+    "title": "Hidden Gems & Unforgettable Experiences",
     "items": [
       {
-        "title": "Cascade Secrète",
-        "desc": "Découverte après 2h de marche dans la forêt vierge.",
-        "gradient": "linear-gradient(135deg, #11998e, #38ef7d)"
+        "title": "Busan's Hidden Neighborhoods",
+        "desc": "Beyond the tourist trails, we discovered quaint cafes, vintage shops, and locals-only restaurants that became our favorite retreats.",
+        "img": "assets/image/20260425_153833.jpg",
+        "gradient": "linear-gradient(135deg, #FF6B6B, #FFD93D)"
       },
       {
-        "title": "Architecture Locale",
-        "desc": "Les ruelles colorées de la vieille ville.",
-        "gradient": "linear-gradient(135deg, #FC466B, #3F5EFB)"
+        "title": "Temple Visits & Spiritual Moments",
+        "desc": "Quiet mornings at ancient temples, meditating alongside monks and finding peace in Korea's spiritual heritage.",
+        "img": "assets/image/20260501_171304.jpg",
+        "gradient": "linear-gradient(135deg, #6C5CE7, #A29BFE)"
       },
       {
-        "title": "Rencontre Sauvage",
-        "desc": "Un moment suspendu avec la faune locale.",
-        "gradient": "linear-gradient(135deg, #ff9966, #ff5e62)"
+        "title": "Language & Cultural Exchanges",
+        "desc": "Learning Korean phrases, sharing our cultures, and building friendships that transcended language barriers.",
+        "img": "assets/image/20260426_182000.jpg",
+        "gradient": "linear-gradient(135deg, #FF9999, #FFB366)"
       },
       {
-        "title": "Plongée Sous-Marine",
-        "desc": "Les récifs coralliens dans toute leur splendeur.",
-        "gradient": "linear-gradient(135deg, #00B4DB, #0083B0)"
+        "title": "BISF Festival Connections",
+        "desc": "Collaborating with international students, presenting our project, and realizing the power of global collaboration.",
+        "img": "assets/image/20260501_180431.jpg",
+        "gradient": "linear-gradient(135deg, #667eea, #764ba2)"
       }
     ]
   },
   "parallax": {
-    "title": "L'immensité du Désert",
-    "text": "Rien de tel que le silence absolu des dunes de sable à perte de vue pour se recentrer. Une expérience qui remet notre place dans le monde en perspective."
+    "title": "What Korea Taught Us",
+    "text": "Travel isn't just about checking destinations off a list. It's about stepping out of your comfort zone, embracing the unfamiliar, and discovering that connection transcends borders. Korea did more than show us beautiful places—it changed our perspective on education, friendship, and what it means to be a global citizen."
   },
   "polaroids": {
-    "title": "Souvenirs en Vrac",
+    "title": "Memory Snapshots",
     "photos": [
       {
         "id": "p1",
-        "caption": "Jour 1 : L'arrivée",
-        "bgColor": "#4facfe"
+        "img": "assets/image/20260425_200408.jpg",
+        "caption": "First steps in Busan",
+        "bgColor": "#FF6B6B"
       },
       {
         "id": "p2",
-        "caption": "Le meilleur repas !",
+        "img": "assets/image/20260426_171719.jpg",
+        "caption": "Gamcheon Culture Village vibes",
         "bgColor": "#f093fb"
       },
       {
         "id": "p3",
-        "caption": "Vue depuis l'hôtel",
-        "bgColor": "#43e97b"
+        "img": "assets/image/20260426_182117.jpg",
+        "caption": "Beach sunset reflections",
+        "bgColor": "#FFD93D"
       },
       {
         "id": "p4",
-        "caption": "Rencontre imprévue",
+        "img": "assets/image/20260425_200103.jpg",
+        "caption": "Korean BBQ night with friends",
         "bgColor": "#fa709a"
       },
       {
         "id": "p5",
-        "caption": "Marché aux épices",
-        "bgColor": "#a18cd1"
+        "img": "assets/image/20260501_171304.jpg",
+        "caption": "Street market exploration",
+        "bgColor": "#6C5CE7"
       },
       {
         "id": "p6",
-        "caption": "Artisanat local",
-        "bgColor": "#f6d365"
+        "img": "assets/image/20260501_180512.jpg",
+        "caption": "BISF Festival presentation day",
+        "bgColor": "#A29BFE"
       },
       {
         "id": "p7",
-        "caption": "Perdus dans les rues",
-        "bgColor": "#ff0844"
+        "img": "assets/image/20260426_171627.jpg",
+        "caption": "Seoul's vibrant streets",
+        "bgColor": "#FF9999"
       },
       {
         "id": "p8",
-        "caption": "Notre guide génial",
-        "bgColor": "#20E2D7"
+        "img": "assets/image/20260501_171344.jpg",
+        "caption": "Gangnam district adventures",
+        "bgColor": "#FFB366"
       },
       {
         "id": "p9",
-        "caption": "Un café en terrasse",
-        "bgColor": "#B6CEE8"
+        "img": "assets/image/20260501_172528.jpg",
+        "caption": "Coffee break in a cozy café",
+        "bgColor": "#30cfd0"
       },
       {
         "id": "p10",
-        "caption": "Avant le départ...",
-        "bgColor": "#F77062"
+        "img": "assets/image/20260505_095027.jpg",
+        "caption": "Goodbye Korea, until next time!",
+        "bgColor": "#667eea"
       }
     ]
   },
   "footer": {
-    "title": "Prêt pour la prochaine destination ?",
-    "copyright": "© 2024 - Mon Carnet de Voyage"
+    "title": "Ready to Explore the World?",
+    "copyright": "© 2024 - My Korea Adventure. Travel. Learn. Connect."
   }
 }
