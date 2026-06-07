@@ -1,4 +1,5 @@
 let contentData = null;
+let numDisplayedCards = 4; // Nombre de cartes affichées dans horizontal
 
 async function loadContent() {
     try {
@@ -17,94 +18,191 @@ function populateContent() {
     document.getElementById('hero-title').textContent = contentData.hero.title;
     document.getElementById('hero-subtitle').textContent = contentData.hero.subtitle;
 
-    // Journal
+    // Journal - Keep as roadmap
     document.getElementById('journal-section-title').textContent = contentData.journal.title;
 
-    // Gallery
+    // Gallery - Random photos from all folders that change
     document.getElementById('gallery-title').textContent = contentData.gallery.title;
     const bentoGrid = document.getElementById('bento-grid');
-    contentData.gallery.items.forEach(item => {
-        const div = document.createElement('div');
-        div.className = `bento-item ${item.class} media-placeholder`;
-        if (item.img) {
-            div.style.backgroundImage = `url('${item.img}')`;
-            div.style.backgroundSize = 'cover';
-            div.style.backgroundPosition = 'center';
-        } else {
-            div.style.background = item.gradient;
-        }
-        div.textContent = item.text;
-        bentoGrid.appendChild(div);
+
+    // Get random images from all chapters
+    let allImages = [];
+    contentData.chapters.forEach(chapter => {
+        allImages = allImages.concat(chapter.images);
     });
 
-    // Horizontal cards
+    // Shuffle and pick first 5
+    function getRandomPhotos() {
+        return allImages.sort(() => 0.5 - Math.random()).slice(0, 5);
+    }
+
+    let currentPhotos = getRandomPhotos();
+    displayPhotos(bentoGrid, currentPhotos);
+
+    // Change photos every 2 seconds with fade effect
+    setInterval(() => {
+        // Fade out
+        const items = document.querySelectorAll('.bento-item');
+        items.forEach(item => {
+            item.style.opacity = '0';
+        });
+
+        // After fade out, change content and fade in
+        setTimeout(() => {
+            currentPhotos = getRandomPhotos();
+            bentoGrid.innerHTML = '';
+            displayPhotos(bentoGrid, currentPhotos);
+
+            // Fade in new photos
+            const newItems = document.querySelectorAll('.bento-item');
+            newItems.forEach(item => {
+                item.style.opacity = '1';
+            });
+        }, 400); // Half of the 0.8s transition time
+    }, 2000); // Change every 2 seconds
+
+    // BUSAN CHAPTER - Section 4
+    createChapterSection('busan-section', contentData.chapters[0]);
+
+    // Horizontal cards - Show ONLY FIRST 4 BUSAN images - Section 5
+    const hContainer = document.getElementById('horizontal-container');
     const hTrack = document.getElementById('horizontal-track');
-    contentData.horizontal.cards.forEach(card => {
+    const busanChapter = contentData.chapters[0]; // Busan
+    const busanImages = busanChapter.images.slice(0, 4);
+
+    busanImages.forEach(imgPath => {
         const cardDiv = document.createElement('div');
         cardDiv.className = 'horizontal-card';
-        const bgStyle = card.img ? `background-image: url('${card.img}'); background-size: cover; background-position: center;` : `background: ${card.bgColor};`;
+        const bgStyle = `background-image: url('${imgPath}'); background-size: cover; background-position: center;`;
         cardDiv.innerHTML = `
             <div class="film-content">
                 <div class="film-video media-placeholder" style="${bgStyle}">
-                    ▶ ${card.video}
                 </div>
                 <div class="film-caption">
-                    <h3>${card.title}</h3>
-                    <p>${card.desc}</p>
+                    <h3>${busanChapter.title}</h3>
+                    <p>Exploring the beauty of Busan</p>
                 </div>
             </div>
         `;
         hTrack.appendChild(cardDiv);
     });
 
-    // Accordion
-    document.getElementById('accordion-title').textContent = contentData.accordion.title;
+    // Adjust horizontal section height based on number of images
+    const numImages = busanImages.length;
+    hTrack.style.width = (numImages * 100) + 'vw';
+    hContainer.style.height = (numImages * 100) + 'vh';
+
+    // FOOD CHAPTER - Section 6
+    createChapterSection('food-section', contentData.chapters[1]);
+
+    // Accordion - Show ONLY FIRST 4 Food images - Section 7
+    document.getElementById('accordion-title').textContent = 'Hidden Gems & Unforgettable Experiences - Food Moments';
     const accordionContainer = document.getElementById('accordion-container');
-    contentData.accordion.items.forEach((item, index) => {
+    const foodChapter = contentData.chapters[1]; // Food
+    foodChapter.images.slice(0, 4).forEach((imgPath, index) => {
         const div = document.createElement('div');
         div.className = 'accordion-item media-placeholder';
-        if (item.img) {
-            // Lazy load background images
-            div.style.backgroundImage = `url('${item.img}')`;
-            div.style.backgroundSize = 'cover';
-            div.style.backgroundPosition = 'center';
-            div.style.backgroundAttachment = 'fixed';
-        } else {
-            div.style.background = item.gradient;
-        }
+        div.style.backgroundImage = `url('${imgPath}')`;
+        div.style.backgroundSize = 'cover';
+        div.style.backgroundPosition = 'center';
         div.innerHTML = `
             <div class="accordion-content">
-                <h3>${item.title}</h3>
-                <p>${item.desc}</p>
+                <h3>${foodChapter.title}</h3>
+                <p>Photo ${index + 1}</p>
             </div>
         `;
         accordionContainer.appendChild(div);
     });
 
-    // Parallax
+    // SEOUL CHAPTER - Section 8
+    createChapterSection('seoul-section', contentData.chapters[2]);
+
+    // Parallax - Keep as intro to Project/BISF - Section 9
     document.getElementById('parallax-title').textContent = contentData.parallax.title;
     document.getElementById('parallax-text').textContent = contentData.parallax.text;
 
-    // Polaroids
-    document.getElementById('polaroid-title').textContent = contentData.polaroids.title;
-    const polaroidContainer = document.getElementById('polaroid-container');
-    contentData.polaroids.photos.forEach(photo => {
-        const div = document.createElement('div');
-        div.className = `polaroid ${photo.id}`;
-        const bgStyle = photo.img ? `background-image: url('${photo.img}'); background-size: cover; background-position: center;` : `background: ${photo.bgColor};`;
-        div.innerHTML = `
-            <div class="media-placeholder" style="${bgStyle}"></div>
-            <div class="polaroid-caption">${photo.caption}</div>
+    // PROJECT/BISF CHAPTER - Section 10
+    createChapterSection('project-section', contentData.chapters[3]);
+
+    // CONCLUSION CHAPTER - Section 11
+    const conclusionSection = document.getElementById('conclusion-section');
+    const conclusion = contentData.conclusion;
+    const conclusionDiv = document.createElement('section');
+    conclusionDiv.className = 'polaroid-section conclusion-section';
+
+    const conclusionTitle = document.createElement('h2');
+    conclusionTitle.className = 'section-title';
+    conclusionTitle.textContent = conclusion.title;
+
+    const conclusionDesc = document.createElement('p');
+    conclusionDesc.className = 'chapter-description conclusion-description';
+    conclusionDesc.textContent = conclusion.description;
+
+    const conclusionContainer = document.createElement('div');
+    conclusionContainer.className = 'polaroid-container';
+
+    conclusion.images.forEach((imgPath, imgIndex) => {
+        const polaroidDiv = document.createElement('div');
+        polaroidDiv.className = `polaroid p${imgIndex + 1}`;
+        polaroidDiv.innerHTML = `
+            <div class="media-placeholder" style="background-image: url('${imgPath}'); background-size: cover; background-position: center;"></div>
+            <div class="polaroid-caption">Moments & Memories</div>
         `;
-        polaroidContainer.appendChild(div);
+        conclusionContainer.appendChild(polaroidDiv);
     });
 
-    // Footer
-    document.getElementById('footer-title').textContent = contentData.footer.title;
-    document.getElementById('footer-copyright').textContent = contentData.footer.copyright;
+    conclusionDiv.appendChild(conclusionTitle);
+    conclusionDiv.appendChild(conclusionDesc);
+    conclusionDiv.appendChild(conclusionContainer);
+    conclusionSection.appendChild(conclusionDiv);
 
-    // Initialize scroll logic after content is loaded
+    // Initialize scroll logic
     initializeScrollLogic();
+}
+
+function createChapterSection(containerId, chapter) {
+    const container = document.getElementById(containerId);
+    const sectionDiv = document.createElement('section');
+    sectionDiv.className = 'polaroid-section';
+
+    const titleDiv = document.createElement('h2');
+    titleDiv.className = 'section-title';
+    titleDiv.textContent = chapter.title;
+
+    const descDiv = document.createElement('p');
+    descDiv.className = 'chapter-description';
+    descDiv.textContent = chapter.description;
+
+    const polaroidContainer = document.createElement('div');
+    polaroidContainer.className = 'polaroid-container';
+
+    chapter.images.forEach((imgPath, imgIndex) => {
+        const polaroidDiv = document.createElement('div');
+        polaroidDiv.className = `polaroid p${imgIndex + 1}`;
+        polaroidDiv.innerHTML = `
+            <div class="media-placeholder" style="background-image: url('${imgPath}'); background-size: cover; background-position: center;"></div>
+            <div class="polaroid-caption">${chapter.title} - Photo ${imgIndex + 1}</div>
+        `;
+        polaroidContainer.appendChild(polaroidDiv);
+    });
+
+    sectionDiv.appendChild(titleDiv);
+    sectionDiv.appendChild(descDiv);
+    sectionDiv.appendChild(polaroidContainer);
+    container.appendChild(sectionDiv);
+}
+
+function displayPhotos(container, photos) {
+    contentData.gallery.items.slice(0, 5).forEach((item, index) => {
+        if (index < photos.length) {
+            const div = document.createElement('div');
+            div.className = `bento-item ${item.class} media-placeholder`;
+            div.style.backgroundImage = `url('${photos[index]}')`;
+            div.style.backgroundSize = 'cover';
+            div.style.backgroundPosition = 'center';
+            container.appendChild(div);
+        }
+    });
 }
 
 function initializeScrollLogic() {
@@ -183,7 +281,7 @@ function initializeScrollLogic() {
 
         hProgress = Math.max(0, Math.min(1, hProgress || 0));
 
-        const maxTranslateX = (contentData.horizontal.cards.length - 1) * 100;
+        const maxTranslateX = (numDisplayedCards - 1) * 100;
         hTrack.style.transform = `translateX(-${hProgress * maxTranslateX}vw)`;
 
         ticking = false;
@@ -199,4 +297,62 @@ function initializeScrollLogic() {
     onScroll();
 }
 
-document.addEventListener("DOMContentLoaded", loadContent);
+document.addEventListener("DOMContentLoaded", () => {
+    loadContent();
+    initializeLightbox();
+});
+
+function initializeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.querySelector('.lightbox-image');
+    const lightboxClose = document.querySelector('.lightbox-close');
+
+    // Open lightbox on image click
+    document.addEventListener('click', function(event) {
+        const target = event.target;
+
+        // Check if clicked element is an image
+        if (target.tagName === 'IMG') {
+            const src = target.src;
+            if (src && !src.includes('data:')) {
+                lightboxImage.src = src;
+                lightbox.classList.add('active');
+            }
+        }
+
+        // Check if clicked element has background-image
+        if (target.classList.contains('media-placeholder') ||
+            target.classList.contains('bento-item') ||
+            target.classList.contains('accordion-item') ||
+            target.classList.contains('polaroid')) {
+
+            const bgImage = window.getComputedStyle(target).backgroundImage;
+            if (bgImage && bgImage.includes('url')) {
+                const url = bgImage.replace(/url\(['"]?([^'")]+)['"]?\)/g, '$1');
+                if (url && !url.includes('data:')) {
+                    lightboxImage.src = url;
+                    lightbox.classList.add('active');
+                }
+            }
+        }
+    });
+
+    // Close lightbox on close button click
+    lightboxClose.addEventListener('click', function() {
+        lightbox.classList.remove('active');
+    });
+
+    // Close lightbox on background click
+    lightbox.addEventListener('click', function(event) {
+        if (event.target === lightbox) {
+            lightbox.classList.remove('active');
+        }
+    });
+
+    // Close lightbox on Escape key
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            lightbox.classList.remove('active');
+        }
+    });
+}

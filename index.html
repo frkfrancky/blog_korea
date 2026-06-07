@@ -8,24 +8,27 @@
 </head>
 <body>
 
-    <!-- HERO -->
+    <!-- 1. HERO - TITLE -->
     <header class="hero">
-        <h1 id="hero-title">Mon Carnet d'Évasion</h1>
-        <p id="hero-subtitle">Découvrez mes aventures à travers le monde, en photos et en vidéos.</p>
-        <div class="scroll-down">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 5v14M19 12l-7 7-7-7"/>
-            </svg>
+        <video class="hero-video" autoplay muted loop>
+            <source src="assets/video/intro.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1 id="hero-title">Mon Carnet d'Évasion</h1>
+            <p id="hero-subtitle">Découvrez mes aventures à travers le monde, en photos et en vidéos.</p>
+            <div class="scroll-down">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 5v14M19 12l-7 7-7-7"/>
+                </svg>
+            </div>
         </div>
     </header>
 
-    <!-- CONCEPT 1 : LE JOURNAL STICKY (Évolution du prototype précédent) -->
+    <!-- 2. THE JOURNEY UNFOLDS - ROADMAP/TABLE OF CONTENTS -->
     <section id="sticky-journal">
-        
         <div class="journal-foreground" id="journal-sticky-box">
-            <h2 id="journal-section-title" style="position: absolute; top: 10%; color: var(--accent); font-size: 2rem;">Le Récit du Voyage</h2>
-            
-            <!-- Carte dynamique qui change au scroll -->
+            <h2 id="journal-section-title" style="position: absolute; top: 10%; color: var(--accent); font-size: 2rem;">The Journey Unfolds</h2>
+
             <div class="journal-card" id="journal-card">
                 <div class="journal-image media-placeholder" id="journal-img">
                     [Image de Préparatifs de voyage]
@@ -36,11 +39,8 @@
                 </div>
             </div>
 
-            <!-- Animation de l'avion -->
             <div class="progress-bar-container">
                 <div class="progress-track"></div>
-                
-                <!-- 4 points de repère pour 4 étapes -->
                 <div class="progress-point" style="left: 0%;"></div>
                 <div class="progress-point" style="left: 33.33%;"></div>
                 <div class="progress-point" style="left: 66.66%;"></div>
@@ -54,52 +54,73 @@
                 </div>
             </div>
         </div>
-
         <div class="journal-background"></div>
     </section>
 
-    <!-- CONCEPT 2 : LA GALERIE BENTO (Pour les plus belles photos) -->
+    <!-- 3. CAPTURED MOMENTS - RANDOM PHOTOS CHANGING -->
     <section class="gallery-section">
-        <h2 class="section-title" id="gallery-title">Instants Capturés</h2>
-        <div class="bento-grid" id="bento-grid">
-        </div>
+        <h2 class="section-title" id="gallery-title">Captured Moments</h2>
+        <div class="bento-grid" id="bento-grid"></div>
     </section>
 
-    <!-- CONCEPT 3 : LA PELLICULE VIDÉO (Scroll Horizontal) -->
+    <!-- 4. BUSAN: THE COASTAL GEM CHAPTER -->
+    <div id="busan-section"></div>
+
+    <!-- 5. HORIZONTAL CARDS (BUSAN IMAGES) -->
     <section class="horizontal-section" id="horizontal-container">
         <div class="horizontal-sticky">
-            <div class="horizontal-track" id="horizontal-track">
-            </div>
+            <div class="horizontal-track" id="horizontal-track"></div>
         </div>
     </section>
 
-    <!-- CONCEPT 4 : L'ACCORDÉON HORIZONTAL -->
+    <!-- 6. KOREAN CUISINE: A CULINARY ADVENTURE CHAPTER -->
+    <div id="food-section"></div>
+
+    <!-- 7. HIDDEN GEMS & UNFORGETTABLE EXPERIENCES (FOOD IMAGES ONLY) -->
     <section class="accordion-section">
-        <h2 class="section-title" id="accordion-title">Beautés Cachées</h2>
-        <div class="accordion-container" id="accordion-container">
-        </div>
+        <h2 class="section-title" id="accordion-title">Hidden Gems & Unforgettable Experiences</h2>
+        <div class="accordion-container" id="accordion-container"></div>
     </section>
 
-    <!-- CONCEPT 5 : LA FENÊTRE PARALLAXE -->
+    <!-- 8. SEOUL: THE DYNAMIC CAPITAL CHAPTER -->
+    <div id="seoul-section"></div>
+
+    <!-- 9. PARALLAX INTRO TO PROJECT/BISF -->
     <section class="parallax-section">
         <div class="parallax-text">
-            <h2 id="parallax-title" style="font-size: 2.5rem; color: var(--accent); margin-bottom: 1rem;">L'immensité du Désert</h2>
-            <p id="parallax-text" style="font-size: 1.2rem; line-height: 1.6;">Rien de tel que le silence absolu des dunes de sable à perte de vue pour se recentrer. Une expérience qui remet notre place dans le monde en perspective.</p>
+            <h2 id="parallax-title" style="font-size: 2.5rem; color: var(--accent); margin-bottom: 1rem;">What Korea Taught Us</h2>
+            <p id="parallax-text" style="font-size: 1.2rem; line-height: 1.6;">Travel isn't just about checking destinations off a list. It's about stepping out of your comfort zone, embracing the unfamiliar, and discovering that connection transcends borders. Korea did more than show us beautiful places—it changed our perspective on education, friendship, and what it means to be a global citizen.</p>
         </div>
     </section>
 
-    <!-- CONCEPT 6 : LE PÊLE-MÊLE POLAROÏD -->
-    <section class="polaroid-section">
-        <h2 class="section-title" id="polaroid-title">Souvenirs en Vrac</h2>
-        <div class="polaroid-container" id="polaroid-container">
-        </div>
-    </section>
+    <!-- 10. THE STUDY PROJECT & BISF FESTIVAL CHAPTER -->
+    <div id="project-section"></div>
+
+    <!-- 11. THE JOURNEY COMES FULL CIRCLE (CONCLUSION) -->
+    <div id="conclusion-section"></div>
+
+    <!-- LIGHTBOX MODAL -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-image" src="" alt="Full screen image">
+    </div>
 
     <!-- FOOTER -->
     <footer>
-        <h2 id="footer-title">Prêt pour la prochaine destination ?</h2>
-        <p id="footer-copyright" style="margin-top: 1rem; color: #888;">© 2024 - Mon Carnet de Voyage</p>
+        <h2 id="footer-title">Ready for the Next Destination?</h2>
+        <p id="footer-copyright" style="margin-top: 1rem; color: #888;">© 2026 - My Korea Adventure</p>
     </footer>
+
+    <!-- PROJECT LINK SECTION WITH VIDEO (NEW FOOTER) -->
+    <section class="thanks-section">
+        <video class="thanks-video" autoplay muted loop>
+            <source src="assets/video/project.mp4" type="video/mp4">
+        </video>
+        <div class="thanks-content">
+            <p class="project-message">Check Out Our Project</p>
+            <a href="https://noli.mastercmw.com" target="_blank" class="project-link">noli.mastercmw.com</a>
+        </div>
+    </section>
 
     <script src="assets/js/script.js"></script>
 </body>

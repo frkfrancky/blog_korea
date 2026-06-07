@@ -1,33 +1,33 @@
 {
   "hero": {
     "title": "My Journey to South Korea",
-    "subtitle": "Discovering Busan, Seoul, Korean Cuisine, and an Unforgettable Study Exchange"
+    "subtitle": "Discovering City and Korean Culture and an Unforgettable Study Exchange"
   },
   "journal": {
-    "title": "The Journey Unfolds",
+    "title": "Let's explore South Korea",
     "stages": [
       {
-        "title": "Busan: The Coastal Gem",
-        "desc": "Our first destination welcomed us with bustling beaches, colorful markets, and stunning coastal views. Busan's vibrant energy and blend of tradition and modernity captured our hearts from day one.",
-        "img": "assets/image/20260425_153833.jpg",
+        "title": "Busan",
+        "desc": "Our first destination welcomed us with colorful markets, and stunning coastal views. Busan's vibrant energy and blend of tradition and modernity captured our hearts from day one.",
+        "img": "assets/image/busan/20260425_092440.jpg",
         "color": "linear-gradient(45deg, #FF6B6B, #FF8E53)"
       },
       {
-        "title": "Korean Cuisine: A Culinary Adventure",
-        "desc": "From street food to fine dining, every meal was an exploration. Kimchi, bibimbap, and tteokbokki became more than just food—they were gateways to understanding Korean culture.",
-        "img": "assets/image/20260501_180431.jpg",
+        "title": "Korean Culinary Adventure",
+        "desc": "From street food to fine dining, every meal was an exploration. Kimchi, bibimbap, and tteokbokki were gateways to understanding Korean culture.",
+        "img": "assets/image/food/20260422_201750.jpg",
         "color": "linear-gradient(45deg, #F5A962, #D66A6A)"
       },
       {
         "title": "The Study Project & BISF Festival",
-        "desc": "Our exchange program brought us together with local students. The BISF Festival was the highlight—showcasing innovation, creativity, and international collaboration in ways we never expected.",
-        "img": "assets/image/20260501_180512.jpg",
+        "desc": "Our exchange program brought us together with local students. This spring, we had the opportunity to attend the BISFF in Busan.",
+        "img": "assets/image/noli/noli1.jpeg",
         "color": "linear-gradient(45deg, #667eea, #764ba2)"
       },
       {
-        "title": "Seoul: The Dynamic Capital",
-        "desc": "K-pop districts, ancient temples, modern skyscrapers—Seoul embodied contradictions beautifully. Every neighborhood told a different story of Korea's past and future.",
-        "img": "assets/image/20260505_093924.jpg",
+        "title": "Seoul",
+        "desc": "K-pop districts, ancient temples, modern skyscrapers, contradictions beautifully. Every neighborhood told a different story of Korea's past and future.",
+        "img": "assets/image/seoul/20260508_220214.jpg",
         "color": "linear-gradient(45deg, #f093fb, #f5576c)"
       }
     ]
@@ -38,35 +38,35 @@
       {
         "id": "bento-1",
         "class": "bento-1",
-        "img": "assets/image/20260426_171719.jpg",
+        "img": "assets/image/busan/20260425_104021.jpg",
         "text": "Busan's Gamcheon Culture Village",
         "gradient": "linear-gradient(45deg, #FF6B9D, #C44569)"
       },
       {
         "id": "bento-2",
         "class": "bento-2",
-        "img": "assets/image/20260425_200408.jpg",
+        "img": "assets/image/food/20260423_130057.jpg",
         "text": "Street food stalls & Korean delicacies",
         "gradient": "linear-gradient(45deg, #f12711, #f5af19)"
       },
       {
         "id": "bento-3",
         "class": "bento-3",
-        "img": "assets/image/20260501_172528.jpg",
+        "img": "assets/image/noli/noli5.jpeg",
         "text": "BISF Festival moments",
         "gradient": "linear-gradient(45deg, #667eea, #764ba2)"
       },
       {
         "id": "bento-4",
         "class": "bento-4",
-        "img": "assets/image/20260505_093924.jpg",
+        "img": "assets/image/seoul/20260508_185318.jpg",
         "text": "Seoul's vibrant nights",
         "gradient": "linear-gradient(45deg, #fa709a, #fee140)"
       },
       {
         "id": "bento-5",
         "class": "bento-5",
-        "img": "assets/image/20260505_095027.jpg",
+        "img": "assets/image/seoul/20260508_221131.jpg",
         "text": "International friendships & connections",
         "gradient": "linear-gradient(45deg, #30cfd0, #330867)"
       }
@@ -77,21 +77,21 @@
       {
         "title": "Busan's Maritime Magic",
         "desc": "A walk along Haeundae Beach at golden hour, with waves crashing and the city lights beginning to twinkle.",
-        "img": "assets/image/20260426_182117.jpg",
+        "img": "assets/image/busan/20260420_115343.jpg",
         "video": "Haeundae Beach sunset walkthrough",
         "bgColor": "#1a3a52"
       },
       {
         "title": "A Taste of Korea",
         "desc": "From making bibimbap to sampling street food at night markets. Every bite tells a story.",
-        "img": "assets/image/20260501_171304.jpg",
+        "img": "assets/image/food/20260427_142243.jpg",
         "video": "Korean cooking experience & market exploration",
         "bgColor": "#4a2c2a"
       },
       {
         "title": "Seoul After Dark",
         "desc": "Neon lights, bustling streets, and unforgettable nights exploring Gangnam, Itaewon, and beyond.",
-        "img": "assets/image/20260505_095028.jpg",
+        "img": "assets/image/seoul/20260508_195907.jpg",
         "video": "Seoul nightlife and cultural districts",
         "bgColor": "#1a1a3a"
       }
@@ -103,96 +103,140 @@
       {
         "title": "Busan's Hidden Neighborhoods",
         "desc": "Beyond the tourist trails, we discovered quaint cafes, vintage shops, and locals-only restaurants that became our favorite retreats.",
-        "img": "assets/image/20260425_153833.jpg",
+        "img": "assets/image/busan/20260425_110842.jpg",
         "gradient": "linear-gradient(135deg, #FF6B6B, #FFD93D)"
       },
       {
         "title": "Temple Visits & Spiritual Moments",
         "desc": "Quiet mornings at ancient temples, meditating alongside monks and finding peace in Korea's spiritual heritage.",
-        "img": "assets/image/20260501_171304.jpg",
+        "img": "assets/image/food/20260425_133008.jpg",
         "gradient": "linear-gradient(135deg, #6C5CE7, #A29BFE)"
       },
       {
         "title": "Language & Cultural Exchanges",
         "desc": "Learning Korean phrases, sharing our cultures, and building friendships that transcended language barriers.",
-        "img": "assets/image/20260426_182000.jpg",
+        "img": "assets/image/noli/noli9.jpeg",
         "gradient": "linear-gradient(135deg, #FF9999, #FFB366)"
       },
       {
         "title": "BISF Festival Connections",
         "desc": "Collaborating with international students, presenting our project, and realizing the power of global collaboration.",
-        "img": "assets/image/20260501_180431.jpg",
+        "img": "assets/image/seoul/20260509_185357.jpg",
         "gradient": "linear-gradient(135deg, #667eea, #764ba2)"
       }
     ]
   },
   "parallax": {
-    "title": "What Korea Taught Us",
-    "text": "Travel isn't just about checking destinations off a list. It's about stepping out of your comfort zone, embracing the unfamiliar, and discovering that connection transcends borders. Korea did more than show us beautiful places—it changed our perspective on education, friendship, and what it means to be a global citizen."
+    "title": "",
+    "text": "I absolutely loved discovering and exploring Korea, and being in this futuristic world was an incredible experience. I made sure to live every moment to the fullest, and sharing this adventure with my colleagues brought even more happiness to the whole trip"
   },
-  "polaroids": {
-    "title": "Memory Snapshots",
-    "photos": [
-      {
-        "id": "p1",
-        "img": "assets/image/20260425_200408.jpg",
-        "caption": "First steps in Busan",
-        "bgColor": "#FF6B6B"
-      },
-      {
-        "id": "p2",
-        "img": "assets/image/20260426_171719.jpg",
-        "caption": "Gamcheon Culture Village vibes",
-        "bgColor": "#f093fb"
-      },
-      {
-        "id": "p3",
-        "img": "assets/image/20260426_182117.jpg",
-        "caption": "Beach sunset reflections",
-        "bgColor": "#FFD93D"
-      },
-      {
-        "id": "p4",
-        "img": "assets/image/20260425_200103.jpg",
-        "caption": "Korean BBQ night with friends",
-        "bgColor": "#fa709a"
-      },
-      {
-        "id": "p5",
-        "img": "assets/image/20260501_171304.jpg",
-        "caption": "Street market exploration",
-        "bgColor": "#6C5CE7"
-      },
-      {
-        "id": "p6",
-        "img": "assets/image/20260501_180512.jpg",
-        "caption": "BISF Festival presentation day",
-        "bgColor": "#A29BFE"
-      },
-      {
-        "id": "p7",
-        "img": "assets/image/20260426_171627.jpg",
-        "caption": "Seoul's vibrant streets",
-        "bgColor": "#FF9999"
-      },
-      {
-        "id": "p8",
-        "img": "assets/image/20260501_171344.jpg",
-        "caption": "Gangnam district adventures",
-        "bgColor": "#FFB366"
-      },
-      {
-        "id": "p9",
-        "img": "assets/image/20260501_172528.jpg",
-        "caption": "Coffee break in a cozy café",
-        "bgColor": "#30cfd0"
-      },
-      {
-        "id": "p10",
-        "img": "assets/image/20260505_095027.jpg",
-        "caption": "Goodbye Korea, until next time!",
-        "bgColor": "#667eea"
-      }
+  "chapters": [
+    {
+      "id": "busan",
+      "title": "Busan",
+      "description": "Our first destination welcomed us with colorful markets, and stunning coastal views. Busan's vibrant energy and blend of tradition and modernity captured our hearts from day one.",
+      "folder": "busan",
+      "color": "#FF6B6B",
+      "images": [
+        "assets/image/busan/20260420_115343.jpg",
+        "assets/image/busan/20260420_212035.jpg",
+        "assets/image/busan/20260421_212719.jpg",
+        "assets/image/busan/20260423_234954.jpg",
+        "assets/image/busan/20260424_185949.jpg",
+        "assets/image/busan/20260425_092440.jpg",
+        "assets/image/busan/20260425_092720.jpg",
+        "assets/image/busan/20260425_104021.jpg",
+        "assets/image/busan/20260425_110842.jpg"
+      ]
+    },
+    {
+      "id": "food",
+      "title": "Korean Culinary Adventure",
+      "description": "From street food to fine dining, every meal was an exploration. Kimchi, bibimbap, and tteokbokki were gateways to understanding Korean culture.",
+      "folder": "food",
+      "color": "#F5A962",
+      "images": [
+        "assets/image/food/20260420_195506.jpg",
+        "assets/image/food/20260422_201007(0).jpg",
+        "assets/image/food/20260422_201750.jpg",
+        "assets/image/food/20260422_212023.jpg",
+        "assets/image/food/20260423_130057.jpg",
+        "assets/image/food/20260423_230426.jpg",
+        "assets/image/food/20260425_133008.jpg",
+        "assets/image/food/20260425_212758.jpg",
+        "assets/image/food/20260427_142243.jpg",
+        "assets/image/food/20260501_230628.jpg",
+        "assets/image/food/20260502_141053.jpg",
+        "assets/image/food/20260502_141153.jpg",
+        "assets/image/food/20260507_225543.jpg"
+      ]
+    },
+    {
+      "id": "seoul",
+      "title": "Seoul",
+      "description": "K-pop districts, ancient temples, modern skyscrapers, contradictions beautifully. Every neighborhood told a different story of Korea's past and future.",
+      "folder": "seoul",
+      "color": "#f093fb",
+      "images": [
+        "assets/image/seoul/20260508_151910.jpg",
+        "assets/image/seoul/20260508_185318.jpg",
+        "assets/image/seoul/20260508_185352.jpg",
+        "assets/image/seoul/20260508_195907.jpg",
+        "assets/image/seoul/20260508_220214.jpg",
+        "assets/image/seoul/20260508_221131.jpg",
+        "assets/image/seoul/20260508_222720.jpg",
+        "assets/image/seoul/20260508_223059.jpg",
+        "assets/image/seoul/20260509_185357.jpg",
+        "assets/image/seoul/20260510_153808(0).jpg",
+        "assets/image/seoul/20260510_170802.jpg"
+      ]
+    },
+    {
+      "id": "noli",
+      "title": "The Study Project & BISF Festival",
+      "description": "Our exchange program brought us together with local students. This spring, we had the opportunity to attend the BISFF in Busan.",
+      "folder": "noli",
+      "color": "#667eea",
+      "images": [
+        "assets/image/noli/noli1.jpeg",
+        "assets/image/noli/noli2.jpeg",
+        "assets/image/noli/noli3.jpeg",
+        "assets/image/noli/noli4.jpeg",
+        "assets/image/noli/noli5.jpeg",
+        "assets/image/noli/noli6.jpeg",
+        "assets/image/noli/noli7.jpeg",
+        "assets/image/noli/noli8.jpeg",
+        "assets/image/noli/noli9.jpeg",
+        "assets/image/noli/noli10.jpeg",
+        "assets/image/noli/noli11.jpeg",
+        "assets/image/noli/noli12.jpeg",
+        "assets/image/noli/noli13.jpg"
+      ]
+    }
+  ],
+  "conclusion": {
+    "id": "conclusion",
+    "title": "The Journey Comes Full Circle",
+    "description": "As our time in Korea came to an end, we realized that this adventure was so much more than a vacation or a student exchange program. It was a transformation. The friendships we made, the food we shared, the challenges we overcame, and the laughter we enjoyed—all of it shaped us in ways we're still discovering. Korea taught us that the world is smaller than we thought and that human connection transcends borders. These moments, captured in photos and forever etched in our hearts, remind us that the best adventures are those that change who you are. Thank you, Korea. We'll be back.",
+    "folder": "extra",
+    "color": "#FFD93D",
+    "images": [
+      "assets/image/extra/20260422_132802.jpg",
+      "assets/image/extra/20260425_095703.jpg",
+      "assets/image/extra/20260425_194408.jpg",
+      "assets/image/extra/20260426_183319.jpg",
+      "assets/image/extra/20260426_183629.jpg",
+      "assets/image/extra/20260501_175556.jpg",
+      "assets/image/extra/20260505_095419.jpg",
+      "assets/image/extra/20260505_095532.jpg",
+      "assets/image/extra/20260508_190926.jpg",
+      "assets/image/extra/20260508_202028.jpg",
+      "assets/image/extra/20260509_115917.jpg",
+      "assets/image/extra/20260509_120828(0).jpg",
+      "assets/image/extra/20260510_191319.jpg",
+      "assets/image/extra/20260426_182000.jpg",
+      "assets/image/extra/20260501_180512.jpg",
+      "assets/image/extra/20260505_095028.jpg"
     ]
   },
   "footer": {
